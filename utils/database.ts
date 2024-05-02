@@ -9,9 +9,9 @@ export const connectToDB = async () => {
   }
   try {
     await mongoose.connect("mongodb+srv://sweetsound:sweetsound111@cluster0.puqt3.mongodb.net/?retryWrites=true&w=majority", {
-      dbName: "course_allocationDB",
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+        dbName: "course_allocationDB",
+    useNewUrlParser: true,  // Update this line
+    useUnifiedTopology: true,
     });
     isConnected = true;
     console.log("db is connected");
