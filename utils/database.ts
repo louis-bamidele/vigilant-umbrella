@@ -8,7 +8,7 @@ export const connectToDB = async () => {
     console.log("DB is already connected");
   }
   try {
-    await mongoose.connect(process.env.MONGODB_URL, {
+    await mongoose.connect("mongodb+srv://sweetsound:sweetsound111@cluster0.puqt3.mongodb.net/?retryWrites=true&w=majority", {
       dbName: "course_allocationDB",
       useNewUrlParser: true,
       useUnifiedTopology: true,
